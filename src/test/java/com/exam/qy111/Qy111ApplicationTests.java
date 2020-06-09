@@ -15,6 +15,7 @@ class Qy111ApplicationTests {
 	private BookService service;
 	@Test
 	void contextLoads() {
+		//查询id为5的书籍信息
 		Wrapper<Book> wrapper = new EntityWrapper<>();
 		wrapper.eq("id","5");
 		System.out.println(service.selectList(wrapper));
