@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.exam.qy111.mapper.ElecinfoDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.exam.qy111.entity.Elecinfo">
+        <id column="elecid" property="elecid" />
+        <result column="months" property="months" />
+        <result column="elecsum" property="elecsum" />
+        <result column="elecmoney" property="elecmoney" />
+        <result column="roomid" property="roomid" />
+        <result column="elecstate" property="elecstate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        elecid, months, elecsum, elecmoney, roomid, elecstate
+    </sql>
+
+</mapper>

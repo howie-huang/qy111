@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.exam.qy111.mapper.BookDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.exam.qy111.entity.Book">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="price" property="price" />
+        <result column="cateId" property="cateId" />
+        <result column="pubDate" property="pubDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, title, price, cateId, pubDate
+    </sql>
+
+</mapper>
