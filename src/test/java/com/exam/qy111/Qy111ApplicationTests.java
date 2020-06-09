@@ -19,5 +19,4 @@ class Qy111ApplicationTests {
 		wrapper.eq("id","5");
 		System.out.println(service.selectList(wrapper));
 	}
-
 }
